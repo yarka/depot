@@ -1,0 +1,9 @@
+<%=semantic_form_for(@product) do |f| %>
+<%= f.inputs do %>
+  <%= f.input :title, :hint => "Title should be at least 10 characters long" %>
+  <%= f.input :description %>
+  <%= f.input :image_url, :hint => "Image should be GIF, JPG or PNG format" %>
+  <%= f.input :price %>
+<% end %>
+<%= f.buttons %>
+<% end %>

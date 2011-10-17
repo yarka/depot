@@ -8,12 +8,9 @@ gem 'rails', '3.1.0'
 gem 'sqlite3'
 gem 'execjs'
 gem 'therubyracer'
-<<<<<<< HEAD
 gem 'formtastic'
 gem 'rails-i18n'
-=======
 
->>>>>>> a299fc802724bfa20c6b148ad31990ad1767534d
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

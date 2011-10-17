@@ -10,7 +10,4 @@ class CreateProducts < ActiveRecord::Migration
     end
   end
 
-  def self.down
-      drop_table :products
-  end
 end

@@ -44,11 +44,8 @@ GEM
     erubis (2.7.0)
     execjs (1.2.9)
       multi_json (~> 1.0)
-<<<<<<< HEAD
     formtastic (2.0.2)
       rails (~> 3.0)
-=======
->>>>>>> a299fc802724bfa20c6b148ad31990ad1767534d
     hike (1.2.1)
     i18n (0.6.0)
     jquery-rails (1.0.14)
@@ -79,11 +76,8 @@ GEM
       activesupport (= 3.1.0)
       bundler (~> 1.0)
       railties (= 3.1.0)
-<<<<<<< HEAD
     rails-i18n (0.1.9)
       i18n (~> 0.5)
-=======
->>>>>>> a299fc802724bfa20c6b148ad31990ad1767534d
     railties (3.1.0)
       actionpack (= 3.1.0)
       activesupport (= 3.1.0)
@@ -125,15 +119,10 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.1.0)
   execjs
-<<<<<<< HEAD
   formtastic
   jquery-rails
   rails (= 3.1.0)
   rails-i18n
-=======
-  jquery-rails
-  rails (= 3.1.0)
->>>>>>> a299fc802724bfa20c6b148ad31990ad1767534d
   sass-rails (~> 3.1.0)
   sqlite3
   therubyracer

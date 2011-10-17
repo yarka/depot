@@ -4,6 +4,7 @@ log/*.log
 tmp/
 *.swp
 *~
+config/database.yml
 .project
 .DS_Store
 .sass-cache/

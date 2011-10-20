@@ -1,0 +1,4 @@
+form.formtastic fieldset ol li p.inline-hints {
+  font-style: italic;
+  font-size: 11px;
+}

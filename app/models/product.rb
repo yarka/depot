@@ -1,8 +1,10 @@
 class Product < ActiveRecord::Base
+ 
   image_accessor :cover_image
-   
-  default_scope :order => 'title'
+
   has_many :line_items
+   
+  default_scope :order => 'title'  
 
   before_destroy :ensure_not_referenced_by_any_line_item
 

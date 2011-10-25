@@ -1,5 +1,5 @@
 class Product < ActiveRecord::Base
- 
+
   image_accessor :cover_image
 
   has_many :line_items

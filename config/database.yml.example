@@ -15,7 +15,7 @@ development:
   database: newmysql
   pool: 5
   username: root
-  password: PIDARAS
+  password: maksbasket
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -28,7 +28,7 @@ test:
   database: mysql_app_test
   pool: 5
   username: root
-  password: PIDARAS
+  password: maksbasket
   socket: /var/run/mysqld/mysqld.sock
 
 production:
@@ -38,5 +38,5 @@ production:
   database: mysql_app_production
   pool: 5
   username: root
-  password: PIDARAS
+  password: maksbasket
   socket: /var/run/mysqld/mysqld.sock

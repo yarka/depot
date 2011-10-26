@@ -148,13 +148,10 @@
   position: relative;
 }
 
-<<<<<<< HEAD
 #store .entry form, #store .entry form div {
 display: inline;
 }
 
-=======
->>>>>>> 5b72dc3b16913ca02e65dfa0a65b2aa9273d9917
 #store .entry  .price {
   color: #44a;
   font-weight: bold;

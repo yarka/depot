@@ -1,12 +1,19 @@
-<%=semantic_form_for @product, :html => {:multipart => true} do |f| %>
+<%= semantic_nested_form_for(@product, :html => { :multipart => true }) do |f| %>
   <%= f.inputs do %>
-    <%= f.input :title, :hint => "Title should be at least 10 characters long" %>
-    <%= f.input :description %>
+    <%= f.input :title , :hint => "Title should be at least 10 characters "%>
+    <%= f.input :description , :input_html => { :rows => 10 }%>
     <%= f.input :price %>
-    <%= f.input :cover_image, :as => :file %> 
-    <%= f.input :retained_cover_image, :as => :hidden %>
-  <% end %>
-  
-  <%= f.buttons %>
 
+    <%= f.semantic_fields_for :images do |image_form| %>
+      <%= image_form.link_to_remove "Remove Image" %>
+      <%= image_form.input :file, :as => :file, :label => "Image", 
+          :hint => "Select    Image" %>
+      <%= image_form.input :retained_file, :as => :hidden %> 
+    <% end %>   
+
+    <%= f.link_to_add "Add Image", :images %>
+  <% end %>
+  <%= f.buttons do %>
+    <%= f.commit_button %>
+  <% end %>
 <% end %>

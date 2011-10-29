@@ -11,7 +11,9 @@
 </p>
 
 <p>
-    <%= image_tag @product.cover_image.url %>
+  <% @product.images.each do |image| %>
+    <%= render_image_for image %>
+  <% end %>
 </p>
 
 <p>

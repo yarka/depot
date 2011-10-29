@@ -13,7 +13,7 @@ gem 'rails-i18n'
 gem 'rack-cache', :require => 'rack/cache'
 gem 'dragonfly', '~>0.9.8'
 gem 'rails-dev-tweaks', '~> 0.5.1'
-
+gem 'nested_form', :git => 'git://github.com/ryanb/nested_form.git'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -33,7 +33,6 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :test do
-  # Pretty printed test output
-  gem 'turn', :require => false
+group :test, :development do
+  gem 'rspec-rails', '~>2.6'
 end

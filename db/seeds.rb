@@ -11,7 +11,6 @@ We'll also walk you through some common Photoshop and CSS techniques
 and work through a web site redesign, taking a new design from concept
 all the way to implementation.
 </p>},
-  :cover_image => File.new("#{Rails.root}/public/images/wd4d.jpg"),
   :price => 42.95)
 
 Product.create!(:title => 'Programming Ruby 1.9',
@@ -21,7 +20,6 @@ Ruby is the fastest growing and most exciting dynamic language
 out there. If you need to get working programs delivered fast,
 you should add Ruby to your toolbox.
 </p>},
-  :cover_image => File.new("#{Rails.root}/public/images/ruby.jpg"),
   :price => 49.50)
 
 Product.create!(:title => 'Rails Test Prescriptions',
@@ -34,5 +32,15 @@ theoretical perspective (why to test) and from a practical perspective
 procedures for Rails 2 and Rails 3, and introduces popular add-ons,
 including Cucumber, Shoulda, Machinist, Mocha, and Rcov.
 </p>},
-  :cover_image => File.new("#{Rails.root}/public/images/rtp.jpg"),
   :price => 43.75)
+
+
+
+image_filenames = %w{ debug.jpg rtp.jpg ruby.jpg wd4d.jpg }
+
+Product.all.each do |product|
+  image_filenames.each do |filename|
+    Image.create!(:file => File.new("#{Rails.root}/public/images/#{filename}"),
+                  :product => product)
+  end
+end

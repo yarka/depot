@@ -2,7 +2,11 @@
 
 <% @products.each do |product| %>
   <div class="entry">
-    <%= image_tag(product.cover_image.url) %>
+
+    <% product.images.each do |image| %>
+      <%= image_tag(image.file.url) %>  
+    <% end %>
+
     <h3><%= product.title %></h3>
     <%= sanitize(product.description) %>
     <div class="price_line">
